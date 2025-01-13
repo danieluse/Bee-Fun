@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Игра Однорукий Бандит</title>
+    <!-- Кнопка для возвращения на главную -->
+    <a href="index.html" class="bee-button back-button">Вернуться на главную</a>
+</head>
+<body>
+    <header class="bee-header">
+        <div class="logo-container">
+            <img src="./img/logo.webp" alt="Bee Icon" class="bee-icon">
+            <div class="bee-title">BEE FUN</div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Вернуться на главную</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="game-container">
+        <h2 class="bee-title-text">Однорукий бандит — Пчелиная версия</h2>
+        
+
+        <div class="slot-machine">
+            <div class="slot" id="slot1"></div>
+            <div class="slot" id="slot2"></div>
+            <div class="slot" id="slot3"></div>
+        </div>
+
+        <div class="lever-container">
+            <button id="lever" class="lever-button">Тянуть рычаг</button>
+        </div>
+
+        <div class="scoreboard">
+            <p>Счет: <span id="score">0</span> медовых монет</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

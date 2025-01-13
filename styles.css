@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6b2;
+}
+
+.bee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffdd57;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.bee-icon {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.bee-logo {
+    height: 70px;
+    width: 570px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 5px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffdd57;
+}
+.bee-title{
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    flex-grow: 1;
+}
+.header-text-container {
+    margin-top: 20px;
+  }
+  
+  .big-text {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .small-text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .bee-text-container {
+    margin-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .bee-text {
+    font-size: 18px;
+    font-style: italic;
+    size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding: 10px 0;
+  }
+  
+  .image-container {
+    margin-top: 20px;
+    margin-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .header-image {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .image-text-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .image-container {
+    flex: 1;  /* Это будет занимать половину доступного пространства */
+    padding-right: 20px;  /* Отступ справа, чтобы изображение не было слишком прижато */
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;  /* Максимальная ширина изображения, чтобы оно не было слишком большим */
+  }
+  
+  .text-container {
+    flex: 1;  /* Это будет занимать вторую половину доступного пространства */
+    padding-left: 20px;  /* Отступ слева */
+  }
+  
+  .section-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+   
+
+
+  /* Стили для пчел */
+.bee {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bee-left, .bee-center, .bee-right {
+    display: inline-block;
+  }
+  
+  .bee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fce94f;
+    border-bottom: 5px solid #f4a261;
+  }
+  
+  .bee-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4a261;
+    margin-left: 10px;
+  }
+  
+  .bee-logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  #menuToggle:hover + .menu {
+    display: block;
+  }
+  
+  .header-text-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .big-text {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .bee-text-container {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .image-text-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fce94f;
+  }
+  
+  .image-container {
+    width: 45%;
+  }
+  
+  .text-container {
+    width: 45%;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #fce94f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #fce94f;
+  }
+  
+  button {
+    background-color: #fce94f;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #e4d900;
+  }
+  
+  .close {
+    color: #fce94f;
+    font-size: 28px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 600px) {
+    .image-text-section {
+      flex-direction: column;
+    }
+  
+    .image-container,
+    .text-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .modal-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    button {
+      padding: 10px 20px;
+    }
+  
+    .close {
+      font-size: 24px;
+    }
+  }
+  /* Основные стили для секции */
+.bee-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./img/pchela-pchelka-bee-oranzhevyy.jpg'); /* Задний фон */
+    background-size: cover; /* Фон будет масштабироваться */
+    background-position: center; /* Центрируем фон */
+    color: white; /* Цвет текста */
+    text-align: center; /* Центрируем текст */
+    position: relative; /* Для накладывания элементов */
+}
+
+/* Контейнер с контентом */
+.bee-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон, чтобы текст был виден на фото */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%; /* Адаптивная ширина */
+}
+
+/* Заголовок */
+.bee-title {
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Описание */
+.bee-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Кнопка */
+.bee-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #fce94f;
+    border: none;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bee-button:hover {
+    background-color: #e4dc48;
+}
+/* Стили для кнопки "Вернуться на главную" */
+.back-button {
+    background-color: #866d0a; /* Цвет фона кнопки */
+    margin-top: 20px; /* Отступ сверху */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста */
+}
+
+.back-button:hover {
+    background-color: #b33711; /* Эффект при наведении */
+}
+
+
+/* Основной фон для секции */
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-image: url('./img/pchela-pchelka-bee-oranzhevyy.jpg'); /* Меняйте на любое фото */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+/* Стили для карточек */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Дисклеймер */
+.disclaimer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+}
+
+.disclaimer-text {
+    margin: 0;
+}
+/* Стиль для подвала */
+.bee-footer {
+    background-color: #fce94f; /* Желтый цвет, как в шапке */
+    color: #333; /* Тёмный цвет текста */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Контейнер для контента подвала */
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Стили для ссылок в подвале */
+.footer-links a {
+    color: #333; /* Тёмный цвет текста для ссылок */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #e4d900; /* Подсветка при наведении, как в кнопках */
+}
+
+/* Стили для текста в подвале */
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
